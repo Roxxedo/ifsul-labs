@@ -1,0 +1,79 @@
+.profile-container {
+    border-bottom: var(--default-border);
+    padding-bottom: 12px;
+
+    display: flex;
+    align-items: center;
+}
+
+.profile-container #profileImage {
+    width: 150px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-right: 12px;
+}
+
+.profile-container #profileName {
+    font-size: large;
+}
+
+.profile-container #profileUsername {
+    color: gray;
+}
+
+.profile-container .buttons {
+    margin-left: auto;
+}
+
+.profile-container button {
+    background: var(--secondary-color);
+    border: var(--default-border);
+    padding: 4px 8px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.profile-navbar {
+    padding-top: 8px;
+    border-bottom: var(--default-border);
+}
+
+.profile-navbar p {
+    font-weight: 500;
+}
+
+.edit-profile-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-profile-container label {
+    font-size: small;
+}
+
+.edit-profile-container input[type="file"] {
+    padding: 4px 0px;
+}
+
+.edit-profile-container input:not([type="file"]) {
+    padding: 4px 8px;
+    margin-bottom: 8px;
+    border-radius: 16px;
+    border: 2px solid #9d9d9d;
+}
+
+.edit-profile-container button {
+    background: lightgray;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 12px;
+    margin-top: 2px;
+}
+
+.edit-profile-container #profile-picture-preview {
+    padding: 4px 0px;
+    width: 100px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}

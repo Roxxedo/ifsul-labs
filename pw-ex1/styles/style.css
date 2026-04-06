@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --background-color: rgb(224, 247, 215);
+    --font-color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #000;
+        --font-color: #fff;
+    }
+}
+
+#categorias {
+    display:flex;
+    flex-direction:column;
+    background-color: var (--background-color);
+    position: fixed;
+    left: 0;
+    width: 25vw;
+    height: 100vh;
+    padding-top: 7px;
+}
+
+#categorias div {
+    margin-left: 24px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.icone {
+    padding-right: 10px;
+}
+
+#corpo {
+    width: 75vw;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    background-color: var(--background-color);
+    color: black;
+}
+
+h1 {
+    width: 75vw;
+    height: 10vh;
+    color: white;
+    text-align: center;
+    background-color: green;
+}
+
+ul{
+    padding: 0px 20px;
+    list-style: none;
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+li:last-child {
+    margin-bottom: 68px;
+}
+
+li {
+    background-color: white;
+    margin: 10px 0px;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li div {
+    display: flex;
+    gap: 5px;
+}
+
+li input {
+    padding-right: 2px;
+}
+
+#addText {
+    display: flex;
+    position: fixed;
+    bottom:25px;
+    width: 75vw;
+}
+
+#addText div {
+    padding: 0px 16px;
+    width: 100%;
+    display: flex;
+    gap: 12px;
+}
+
+#addText div input {
+    width: 100%;
+    padding: 6px;
+}
+
+#addText div button {
+    padding: 0px 12px;
+}
+
+div:has(input[type=checkbox]:checked)>span {
+    text-decoration: line-through;
+    color: gray
+}

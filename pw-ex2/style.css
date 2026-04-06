@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0px;
+    width: 100%;
+    background: lightblue;
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.box {
+    padding: 24px 16px;
+    background: lightblue;
+    border-radius: 8px;
+}
+
+.listadeapps {
+    margin-bottom: 25px;
+}
+
+.row {
+    width: 50%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: lightcyan;
+}
+
+input[type=text], input[type=number], button {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 0;
+}
+
+#produtos {
+    padding-left: 0px;
+}
+
+img#preview {
+    max-width: 100%;
+}
+
+li.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+li.item>div {
+    display: flex;
+}
+
+li.item h2 {
+    margin: 0;
+}
+
+li.item img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+li.item:not(:last-child) {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #adadad;
+}
+
+.sort {
+    width: fit-content;
+    cursor: pointer;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    margin: 0;
+    margin-bottom: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.active {
+    text-decoration: underline;
+}

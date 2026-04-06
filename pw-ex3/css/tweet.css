@@ -1,0 +1,147 @@
+.tweet-input-container {
+    display: flex;
+    flex-direction: column;
+    border-bottom: var(--default-border);
+    padding-bottom: 8px;
+}
+
+.tweet-input { 
+    width: calc(100% - 24px);
+    height: 100px;
+    resize: vertical;
+    border: var(--default-border);
+    border-width: 2px !important;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 8px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    outline: none;
+    background: var(--secondary-color);
+    color: var(--font-color);
+}
+
+.tweet-input:focus {
+    border: 2px solid lightskyblue;
+    outline: none;
+}
+
+
+.tweet-input-options {
+    display: flex;
+}
+
+.tweet-input-options .tweet-submit, .tweet-input-options .tweet-add-image {
+    width: 75px;
+    
+    background: lightgray;
+    border: none;
+
+    padding: 4px 8px;
+    border-radius: 12px;
+}
+
+.tweet-input-options .tweet-submit {
+    margin-left: auto;
+}
+
+.tweet-list-item, .modal-tweet-item {
+    display: flex;
+    flex-direction: column;
+
+    padding: 8px 0px;
+
+    /* border-top: 1px solid lightgray; */
+    border-bottom: var(--default-border);
+}
+
+.tweet-list-item .tweet, .modal-tweet-item .tweet {
+    display: flex;
+}
+
+.tweet-list-item:hover {
+    background: rgba(0, 0, 0, .2);
+    transition: background 300ms;
+}
+
+.tweet-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6px;
+}
+
+.tweet-author-name {
+    font-weight: 500;
+    margin-bottom: 1px;
+}
+
+.tweet-author img {
+    margin-right: 5px;
+    width: 48px;
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.tweet-interactions {
+    display: flex;
+    width: 100%;
+}
+
+.tweet-interactions>* {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+
+.tweet-interactions svg {
+    width: 16px;
+    aspect-ratio: 1/1;
+    fill: gray;
+}
+
+.tweet-interactions .like.active svg {
+    fill: red;
+}
+
+.comment-input-container {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.comment-input-container input {
+    width: 100%;
+    padding: 4px 8px;
+    border-radius: 16px;
+    border: var(--default-border)
+}
+
+.comment-input-container button {
+    background: var(--secondary-color);
+    border: var(--default-border);
+    padding: 0px 6px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.comments-list {
+    margin-top: 5px;
+    margin-left: 24px;
+}
+
+.image-upload-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#upload-preview-image {
+    margin: 10px 0px;
+    max-height: 500px;
+}
+
+img.tweet-content {
+    max-width: 50%;
+}

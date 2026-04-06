@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>T - Tux</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/utils.css">
+
+    <!-- Scripts -->
+
+    <script src="js/login/login.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2>T - Tux</h2>
+    </header>
+    <div class="container h-full login-out-container">
+        <div class="login-container">
+            <h3>Tux Login</h3>
+            <label for="username">Usuário</label>
+            <input type="text" name="username" id="username">
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password">
+            <span class="error-message"></span>
+            <button id="login-submit">Entrar</button>
+            <p class="warn-message">Se ainda não tem usuário, crie <a href="./register.html">aqui</a></p>
+        </div>
+    </div>
+</body>
+</html>

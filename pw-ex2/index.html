@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="index.js" defer></script>
+    <title>Inventário de Produtos</title>
+</head>
+<body>
+    <header><h1>Inventário de Produtos</h1></header>
+    <div class="row">
+        <div class="box cadastro">
+            <h2 id="t-cadastro">Cadastro de Produto</h2>
+            <span id="nome">Nome</span>
+            <input type="text" id="valor_nome">
+            <span id="descricao">Descrição</span>
+            <input type="text" id="valor_desc">
+            <span id="preco">Preço</span>
+            <input type="number" id="valor_preco">
+            <span id="preco">Estoque</span>
+            <input type="number" id="valor_estoque">
+            <span id="imagem">Imagem</span>
+            <input type="file" id="input_img" accept="image/*">
+            <img src="" width="300px" id="preview" alt="">
+            <button id="b-cadastrar">Cadastrar</button>
+        </div>
+        <div class="box">
+            <h2>Listagem de Produto</h2>
+            <div>
+                <div class="listadeapps">
+                    <p class="sort" id="sort-preco">Organizar por Menor Preço</p>
+                    <p class="sort" id="sort-preco-mai">Organizar por Maior Preço</p>
+                    <p class="sort" id="sort-estoque-cec">Organizar por Menor Estoque</p>
+                    <p class="sort" id="sort-estoque-dec">Organizar por Maior Estoque</p>
+                    <p class="sort" id="sort-nome">Organizar por Ordem Alfabética</p>
+                    <p class="sort" id="sort-nome-dec">Organizar por Ordem Alfabética Decrescente</p>
+                    <p class="sort" id="limit-preco">Defina um Preço Máximo</p>
+                    <p class="sort" id="limit-preco-min">Defina um Preço Mínimo</p>
+                    <p class="sort" id="sort-nome-sea">Pesquisar</p>
+                </div>
+                <ul id="produtos">
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+:root {
+    --icon-size: 24px;
+}
+
+.sidebar-list-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebar-list-item span {
+    font-size: large;
+    margin-left: 10px;
+}
+
+.sidebar-list-item.active {
+    font-weight: 600;
+}
+
+.sidebar-list-item svg {
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.user-profile-item {
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.user-profile-item img {
+    width: 38px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 100%;
+}
